@@ -1,0 +1,177 @@
+/* Shared styles for the Edunity legal pages. No scripts, fonts or trackers. */
+:root {
+  --navy: #102a56;
+  --teal: #0f8f81;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #172033;
+  --muted: #5b6a82;
+  --border: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --navy: #9db8ea;
+    --teal: #3cd0bd;
+    --bg: #0e1626;
+    --surface: #152036;
+    --text: #e8edf6;
+    --muted: #a3b0c6;
+    --border: #26344f;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+header.site {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+header.site a.brand {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--navy);
+  text-decoration: none;
+}
+
+header.site nav a {
+  margin-left: 1rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+header.site nav a:hover,
+header.site nav a[aria-current="page"] {
+  color: var(--teal);
+}
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 0.25rem;
+  color: var(--navy);
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2.2rem 0 0.5rem;
+  color: var(--navy);
+}
+
+p,
+ul,
+ol {
+  margin: 0.6rem 0;
+}
+
+li {
+  margin: 0.3rem 0;
+}
+
+a {
+  color: var(--teal);
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.card h2:first-child {
+  margin-top: 0.25rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+footer.site {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.list-links {
+  list-style: none;
+  padding: 0;
+}
+
+.list-links li {
+  margin: 0.6rem 0;
+}
+
+.list-links a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.list-links a span {
+  display: block;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.92rem;
+}
+
+.list-links a:hover {
+  border-color: var(--teal);
+}
